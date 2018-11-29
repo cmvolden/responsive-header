@@ -10,7 +10,6 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3 sans-serif;
   font-family: Ubuntu, sans-serif;
   line-height: 1.5;
 }
@@ -23,16 +22,21 @@ body {
   margin: 0;
 }
 
-h1 {
-  margin: 0;
-  display: block;
+header {
   background-color: #18294f;
   color: #fff;
 }
 
-ul {
+header h1 {
+  margin: 0;
+  display: block;
+  font-size: 2rem;
+}
+
+nav ul {
   padding: 0;
   margin: 0;
+  font-size: 1.125rem;
 }
 
 li {
@@ -42,12 +46,13 @@ li {
   text-decoration: none;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: #6c8fe0;
+  white-space: normal;
 }
 
-a:hover {
+nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
   border-color: #6c8fe0;
