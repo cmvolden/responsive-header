@@ -42,11 +42,10 @@ nav ul {
   margin: 0;
   font-size: 1.125rem;
   align-items: center;
+  list-style-type: none;
 }
 
 li {
-  padding: .3em 0 .5em;
-  display: block;
   background-color: #18294f;
   color: #6c8fe0;
   text-decoration: none;
@@ -54,15 +53,30 @@ li {
 }
 
 nav a {
-  padding: 0 .75rem;
+  padding: .5em .75em;
   text-decoration: none;
   color: #6c8fe0;
   white-space: normal;
   justify-content: space-between;
+  display: block;
 }
 
 nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
   border-color: #6c8fe0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%;
+    text-align: center;
+  }
+
 }
